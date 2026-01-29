@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Tomybachtiar | Personal Links</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#14b8a6",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: "Plus Jakarta Sans", sans-serif;
+        }
+
+        .custom-gradient {
+            background: linear-gradient(135deg, #0d121b 0%, #1e1b4b 50%, #ffffff 150%);
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark min-h-screen flex flex-col font-display">
+    <!-- Background Layer (Desktop Focus) -->
+    <div class="fixed inset-0 z-0 custom-gradient opacity-100"></div>
+    <div class="relative z-10 flex flex-col min-h-screen items-center overflow-x-hidden">
+        <!-- Top Navigation -->
+        <div class="w-full flex justify-center py-4">
+            <div class="max-w-[960px] w-full px-6">
+                <header
+                    class="flex items-center justify-between whitespace-nowrap border-b border-white/10 px-4 py-3 backdrop-blur-sm rounded-xl bg-white/5">
+                    <div class="flex items-center gap-4 text-white">
+                        <div class="size-6 text-primary">
+                            <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                <path clip-rule="evenodd" d="M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V4Z"
+                                    fill="currentColor" fill-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">OfficeHub</h2>
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <div class="hidden md:flex items-center gap-9">
+                            <a class="text-white/80 hover:text-white text-sm font-medium transition-colors"
+                                href="#">Home</a>
+
+                        </div>
+
+                    </div>
+                </header>
+            </div>
+        </div>
+        <!-- Main Content Container -->
+        <main class="flex-1 flex flex-col items-center justify-center w-full max-w-7xl px-6 py-12">
+            <!-- Profile Header Section -->
+            <div class="flex flex-col items-center gap-6 mb-10">
+                <div class="relative group">
+                    <div
+                        class="absolute -inset-1 bg-gradient-to-r from-primary to-purple-600 rounded-full blur opacity-40 group-hover:opacity-75 transition duration-1000 group-hover:duration-200">
+                    </div>
+                    <div class="relative bg-center bg-no-repeat aspect-square bg-cover rounded-full h-32 w-32 border-4 border-white/20 shadow-2xl"
+                        data-alt="Professional headshot of a smiling designer"
+                        style='background-image: url("images/profile.jpg");'>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <h1 class="text-white text-3xl font-bold tracking-tight mb-2">Tomy bachtiar</h1>
+                    <p class="text-white/70 text-lg font-normal leading-relaxed max-w-sm">
+                        Koordinator PT MKP UP PLTU Ampana
+                    </p>
+                    <div class="flex items-center justify-center gap-2 mt-2 text-white/50 text-sm">
+                        <span class="material-symbols-outlined text-sm">location_on</span>
+                        <span>Ampana City</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Link Buttons Group -->
+            <div id="link-container" class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- Links will be generated here by JavaScript -->
+            </div>
+            <!-- Social Actions Bar -->
+
+        </main>
+        <!-- Footer -->
+        <footer class="w-full flex flex-col gap-4 px-5 py-12 text-center items-center mt-auto">
+            <div class="flex flex-wrap items-center justify-center gap-8 mb-4">
+                <a class="text-white/40 hover:text-white text-sm transition-colors font-normal" href="#">Privacy
+                    Policy</a>
+                <a class="text-white/40 hover:text-white text-sm transition-colors font-normal" href="#">Terms of
+                    Service</a>
+                <!-- GitHub moved here -->
+                <a class="text-white/40 hover:text-white text-sm transition-colors font-normal flex items-center gap-1"
+                    href="#">
+                    <span class="material-symbols-outlined text-[16px]">code</span>
+                    GitHub
+                </a>
+            </div>
+            <div class="flex items-center gap-2 text-white/30 text-xs uppercase tracking-widest font-bold">
+                <span>© 2025 Tomy Bachtiar</span>
+                <span class="w-1 h-1 bg-white/30 rounded-full"></span>
+                <span>nocopyright</span>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Script to Generate Links -->
+    <script>
+        // Configuration for your links
+        // You can easily add, remove, or modify links here
+        const links = [
+            {
+                title: "LAPORAN BULANAN PT MKP UP AMPANA",
+                url: "https://drive.google.com/drive/folders/1SCsycIcqLc1MamZiaqnsIOQDdDI23BCF?usp=sharing",
+                icon: "folder",
+                style: "primary" // Use "primary" for the main call-to-action button
+            },
+            {
+                title: "NO FILE",
+                url: "#",
+                icon: "folder",
+                style: "secondary"
+            },
+            {
+                title: "NO FILE",
+                url: "#",
+                icon: "folder",
+                style: "secondary"
+            },
+            {
+                title: "NO FILE",
+                url: "#",
+                icon: "folder",
+                style: "secondary"
+            },
+            {
+                title: "NO FILE",
+                url: "#",
+                icon: "folder",
+                style: "secondary"
+            },
+            {
+                title: "NO FILE",
+                url: "#",
+                icon: "folder",
+                style: "secondary"
+            }
+        ];
+
+        // Function to render links
+        const renderLinks = () => {
+            const container = document.getElementById('link-container');
+            container.innerHTML = ''; // Clear existing content
+
+            links.forEach(link => {
+                // Automatic handling for empty links
+                const isEmpty = link.url === "#" || link.url === "";
+                const displayTitle = isEmpty ? "NO FILE" : link.title;
+
+                // Automatic styling: Combined "menyesuaikan" logic.
+                // If it has a file (not empty), it gets the Primary (Blue) style.
+                // If it is empty, it gets the Secondary (Dark) style.
+                const isPrimary = !isEmpty;
+
+                // Base classes
+                let classes = "group relative flex items-center justify-center w-full h-14 px-6 rounded-xl font-semibold text-lg transition-all duration-200 hover:-translate-y-0.5";
+
+                // Style-specific classes
+                // Ensure Primary (Blue) only for valid links with primary style
+                if (isPrimary) {
+                    classes += " bg-primary text-white font-bold shadow-lg hover:shadow-primary/20";
+                } else {
+                    classes += " bg-white/10 backdrop-blur-md border border-white/20 text-white hover:bg-white/20";
+                }
+
+                const anchor = document.createElement('a');
+                anchor.className = classes;
+                anchor.href = link.url;
+
+                // Add click event for empty files
+                if (isEmpty) {
+                    anchor.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        alert("file kosong!");
+                    });
+                }
+
+                // Create Icon with 3D Gradient Data Look
+                const iconSpan = document.createElement('span');
+                // Removed 'absolute left-6' to fix overlap. Added margin to right.
+                iconSpan.className = "material-symbols-outlined text-2xl transition-transform group-hover:scale-110 bg-gradient-to-tr from-yellow-300 to-yellow-600 bg-clip-text text-transparent drop-shadow-sm mr-2 flex-shrink-0";
+                iconSpan.style.textShadow = "0px 2px 3px rgba(0,0,0,0.3)"; // Extra depth
+                iconSpan.style.webkitBackgroundClip = "text"; // Ensure gradient works on text
+                iconSpan.innerText = link.icon; // Using innerText for robustness
+
+                // Create Text
+                const textSpan = document.createElement('span');
+                textSpan.className = "text-center line-clamp-2"; // Prevent too long text
+                textSpan.textContent = displayTitle;
+
+                anchor.appendChild(iconSpan);
+                anchor.appendChild(textSpan);
+
+                container.appendChild(anchor);
+            });
+        };
+
+        // Run the render function when the page loads
+        document.addEventListener('DOMContentLoaded', renderLinks);
+    </script>
+</body>
+
+</html>
